@@ -15,7 +15,7 @@ public class GradeBook {
     courseName = name;
 	}
 //Μεθοδος για να εμφανιστούν τα μαθήματα σαν πίνακας. Εμφανίζεται μετά την displayMessage.
-	public String displayCourseMenu(){
+	public static void displayCourseMenu(){
 		System.out.println("=== Select a Course ===");
         System.out.println("1. CS101 Introduction to Java Programming");
         System.out.println("2. CS102 Data Structures in Java");
