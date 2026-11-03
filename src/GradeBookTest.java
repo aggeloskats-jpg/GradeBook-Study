@@ -5,11 +5,11 @@ public class GradeBookTest {
 	{
 		Scanner sc = new Scanner(System.in);
 		int choice;
-		String courseName;
+		String courseName = "";
 		
 		GradeBook.displayCourseMenu();
 		choice = sc.nextInt();
-		sc.nextLine(); //Καθαρίζει το enter από το buffer.
+		sc.nextLine(); 
 
 		if (choice==6){
 			System.out.println("Type the subject's : ");
