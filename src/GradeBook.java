@@ -11,10 +11,11 @@ public class GradeBook {
 		return courseName;
 	}
 	
+	public GradeBook(String name){
+    courseName = name;
+	}
 	
-	
-	public void displayMessage() 
-	{
+	public void displayMessage() {
 		System.out.println("Welcome to the Grade Book!");
 		System.out.println("--**--**--**--**");
 		System.out.println("The chosen subject is: " + getCourseName());
