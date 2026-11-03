@@ -27,8 +27,8 @@ public class GradeBook {
 	}
 	
 	public void displayMessage() {
-		System.out.println("Welcome to the Grade Book!");
-		System.out.println("--**--**--**--**");
+	    System.out.printf("Welcome to the Grade Book for: %s!\n", getCourseName());
+	    System.out.println("--**--**--**--**");
 	}
 	
 }
