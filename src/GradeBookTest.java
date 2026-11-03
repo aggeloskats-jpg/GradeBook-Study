@@ -5,7 +5,7 @@ public class GradeBookTest {
 	{
 		Scanner sc = new Scanner(System.in);
 		int choice;
-		
+		String courseName;
 		
 		GradeBook.displayCourseMenu();
 		choice = sc.nextInt();
@@ -13,37 +13,35 @@ public class GradeBookTest {
 
 		if (choice==6){
 			System.out.println("Type the subject's : ");
-			String name = sc.nextLine();
+			courseName = sc.nextLine();
 		} else {
 			switch (choice) {
 				case 1:
-			        subject = "CS101 Introduction to Java Programming";
+			        courseName = "CS101 Introduction to Java Programming";
 			        break;
 			    case 2:
-			        subject = "CS102 Data Structures in Java";
+			        courseName = "CS102 Data Structures in Java";
 			        break;
 			    case 3:
-			        subject = "CS103 Database Systems";
+			        courseName = "CS103 Database Systems";
 			        break;
 			    case 4:
-			        subject = "CS104 Operating Systems";
+			        courseName = "CS104 Operating Systems";
 			        break;
 			    case 5:
-			        subject = "CS105 Software Engineering";
+			        courseName = "CS105 Software Engineering";
 			        break;
 			    default:
-			        subject = "Unknown Course";
+			        courseName = "Unknown Course";
 			        System.out.println("Invalid selection!");
 			        break;
 			}
 		}
 				
-		GradeBook myGradeBook = new GradeBook(name);
+		GradeBook myGradeBook = new GradeBook(courseName);
 
-		myGradeBook.setCourseName(name);
-		
-		
 		myGradeBook.displayMessage();
+	sc.close();
 	}
 
 }
